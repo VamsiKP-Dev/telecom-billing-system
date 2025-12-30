@@ -43,22 +43,31 @@ telecom-billing-system/
 │
 ├── backend/
 │   ├── app/
-│   │   ├── api/            # API route handlers
-│   │   ├── models/         # Database models
-│   │   ├── schemas.py      # Pydantic schemas
-│   │   ├── database.py     # DB connection
-│   │   ├── config.py       # Environment config
-│   │   └── main.py         # FastAPI app entry point
-│   └── requirements.txt
+│   │   ├── api/             # API route handlers
+│   │   ├── models/          # Database models
+│   │   ├── services/        # Business logic / service layer
+│   │   ├── config.py        # Environment config
+│   │   ├── database.py      # DB connection
+│   │   ├── main.py          # FastAPI app entry point
+│   │   └── schemas.py       # Pydantic schemas
+│   ├── tests/
+│   │   └── test_api.py      # Unit / API tests
+│   ├── venv/                # Python virtual environment
+│   └── requirements.txt     # Python dependencies
 │
-├── docker/
-│   └── Dockerfile
+├── Jenkins/
+│   └── Jenkinsfile          # CI/CD pipeline
 │
 ├── k8s/
-│   ├── deployment.yaml
-│   └── service.yaml
+│   ├── configmap.yaml       # ConfigMap for Kubernetes
+│   ├── deployment.yaml      # K8s deployment
+│   └── service.yaml         # K8s service
 │
-└── README.md
+├── .dockerignore.txt        # Docker ignore file
+├── .gitignore               # Git ignore file
+├── Dockerfile               # Dockerfile at project root
+└── README.md                # Project README
+
 ```
 
 ---
