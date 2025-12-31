@@ -184,7 +184,7 @@ Expected output:
 ## 👨‍💻 Author
 
 **Vamsi Krishna**
-DevOps | Backend | Cloud Enthusiast
+DevOps Engineer | CI/CD Pipelines | Kubernetes & Docker | AWS | Terraform | Cloud Infrastructure | Monitoring
 
 ---
 
